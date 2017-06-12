@@ -5,6 +5,7 @@
 
 $(function () {
    /* $('span').hide();*/
+   console.log('卢鹏是个猪');
     //username
     //鼠标移开
     $('#username').on('mouseleave',function () {
