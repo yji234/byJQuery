@@ -4,7 +4,7 @@
 
 
 $(function () {
-    /*$('span').hide();*/
+   /* $('span').hide();*/
     //username
     //鼠标移开
     $('#username').on('mouseleave',function () {
