@@ -1,0 +1,57 @@
+/*iphone 7 plus:1920*1080*/
+
+#loginMain{
+    background: lightpink;
+    color: white;
+}
+#loginForm{
+    padding-top: 100px;
+}
+#loginForm>h1{
+    margin-left:42%;
+    margin-bottom: 20px;
+}
+#loginForm>.form-control{
+    width: 80%;
+    margin-left: 10%;
+    display: inline;
+}
+#loginForm>#remember{
+    margin: 10px 1% 20px 10%;
+}
+#loginForm>#loginBtn,
+#loginForm>#resetBtn{
+    width: 39%;
+}
+#loginForm>#loginBtn{
+    margin-left: 10%;
+    background-color: lightblue;
+    border-color: lightblue;
+}
+#loginForm>#resetBtn{
+    background-color: white;
+    border-color: white;
+    color: lightblue;
+}
+#loginForm>span.tip{
+    display: none;
+    font-size: x-large;
+}
+#loginForm>.loginHint{
+    font-size: xx-small;
+    margin-left: 10%;
+    color: red;
+}
+#loginForm>p{
+    display: inline;
+}
+.okSpan{
+    color: lightblue;
+    margin-top: 10px;
+    top: 7px;
+}
+.removeSpan{
+    color: red;
+    position: relative;
+    top: 7px;
+}

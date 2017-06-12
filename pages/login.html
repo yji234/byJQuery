@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--移动设备优先-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login</title>
+
+    <link href="../framework/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+
+</head>
+<body id="loginMain">
+   <div class="container">
+       <form action="#" id="loginForm">
+           <h1>登录</h1>
+           <!--用户名-->
+           <input type="text" name="username" id="username" value="" required class="form-control" placeholder="用户名">
+           <span class="glyphicon glyphicon-ok tip"></span>
+           <span class="glyphicon glyphicon-remove tip"></span>
+           <span class="loginHint tip">只能输入5-20个以字母开头、可带数字、“_”、“.”的字串</span>
+            <!--密码-->
+           <input type="password" name="psw" id="psw" value="" required class="form-control" placeholder="密码">
+           <span class="glyphicon glyphicon-ok tip"></span>
+           <span class="glyphicon glyphicon-remove tip"></span>
+           <span class="loginHint tip">只能输入6-20个字母、数字、下划线</span><br>
+            <!--记住密码-->
+           <input type="checkbox" name="remember" id="remember"><p>记住密码</p><br>
+            <!--BUTTON-->
+           <button class="btn btn-primary" id="loginBtn">登录</button>
+           <button class="btn btn-default" type="reset" id="resetBtn">重置</button>
+
+       </form>
+   </div>
+
+
+    <script src="../framework/jQuery/jquery.min.js"></script>
+    <script src="../framework/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+
+   <script>
+
+   </script>
+</body>
+</html>
