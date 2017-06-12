@@ -107,6 +107,15 @@ $(function () {
             registerData.repsw = $('#repsw').val();
             registerData.verification = $('#verification').val();
             console.log(registerData)
+            $.ajax({
+                url:'',
+                method:'GET',
+                data:registerData,
+                dataType:'json',
+                success:function (data) {
+                    alert(data);
+                }
+            });
         }
     });
 
