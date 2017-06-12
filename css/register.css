@@ -1,0 +1,55 @@
+
+
+#registerMain{
+    background: lightyellow;
+    color: lightblue;
+}
+#registerForm{
+    padding-top: 100px;
+}
+#registerForm>h1{
+    margin-left:42%;
+    margin-bottom: 20px;
+}
+#registerForm>.form-control{
+    width: 80%;
+    margin-left: 10%;
+    display: inline;
+}
+#registerForm>#verification{
+
+    margin-bottom: 20px;
+}
+#registerForm>#registerBtn,
+#registerForm>#resetBtn{
+    width: 39%;
+}
+#registerForm>#registerBtn{
+    margin-left: 10%;
+    background-color: lightblue;
+    border-color: lightblue;
+}
+#registerForm>#resetBtn{
+    background-color: white;
+    border-color: white;
+    color: lightblue;
+}
+#registerForm>span.tip{
+    display: none;
+    font-size: x-large;
+}
+#registerForm>span.registerHint{
+    font-size: xx-small;
+    margin-left: 10%;
+    color: red;
+}
+.okSpan{
+    color: lightblue;
+    margin-top: 10px;
+    top: 7px;
+}
+.removeSpan{
+    color: red;
+    position: relative;
+    top: 7px;
+}
