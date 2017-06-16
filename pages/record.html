@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--移动设备优先-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Record</title>
+
+    <link href="../framework/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/record.css" rel="stylesheet">
+
+</head>
+<body id="recordMain">
+    <div class="container">
+        <div id="record">
+            <ul id="recordTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#expend" data-toggle="tab">支出</a>
+                </li>
+                <li>
+                    <a href="#income" data-toggle="tab">收入</a>
+                </li>
+            </ul>
+            <div id="recordContent" class="tab-content">
+                <div class="tab-pane fade in active" id="expend">
+                    <!--分类-->
+                    <table class="table classify">
+                        <thead>
+                            <tr>
+                                <th>分类</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--衣:服饰、网购、化妆护肤-->
+                            <tr>
+                                <td class="classifyChild">
+                                    <h5>衣</h5>
+                                    <div style="background-color: orange">服饰</div>
+                                    <div style="background-color: #1b6d85">网购</div>
+                                    <div style="background-color: yellow">化妆</div>
+                                    <div style="background-color: forestgreen">护肤</div>
+                                </td>
+                            </tr>
+                            <!--食：外出吃饭、蔬菜水果、零食、医疗-->
+                            <tr>
+                                <td class="classifyChild">
+                                    <h5>食</h5>
+                                    <div style="background-color: lightpink">吃饭</div>
+                                    <div style="background-color: lightgreen">蔬菜</div>
+                                    <div style="background-color: #e0e0e0">水果</div>
+                                    <div style="background-color: palevioletred">零食</div>
+                                    <div style="background-color: deepskyblue">医疗</div>
+                                </td>
+                            </tr>
+                            <!--住：租房、电费、话费、日用品、娱乐-->
+                            <tr>
+                                <td class="classifyChild">
+                                    <h5>住</h5>
+                                    <div style="background-color: teal">房租</div>
+                                    <div style="background-color: peachpuff">电费</div>
+                                    <div style="background-color: lightgreen">话费</div>
+                                    <div style="background-color: azure">日用</div>
+                                    <div style="background-color: lightpink">娱乐</div>
+                                </td>
+                            </tr>
+                            <!--行：交通-->
+                            <tr>
+                                <td class="classifyChild">
+                                    <h5>行</h5>
+                                    <div style="background-color: hotpink">交通</div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <!--备注-->
+                    <table class="table remark">
+                        <thead>
+                            <tr>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="备注" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--日期-->
+                    <table class="table remark">
+                        <thead>
+                        <tr>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="datetime-local" placeholder="日期" class="form-control"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--钱钱-->
+                    <table class="table remark">
+                        <thead>
+                        <tr>
+                            <th>Money</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="number" min="0" placeholder="花销" class="form-control"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--计算器-->
+                    <table class="table calculator">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="income">
+                    <h4>收入tab页</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../framework/jQuery/jquery.min.js"></script>
+    <script src="../framework/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/record.js"></script>
+</body>
+</html>
