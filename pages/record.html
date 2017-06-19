@@ -86,12 +86,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="text" placeholder="备注" class="form-control"></td>
+                                <td><input type="text" placeholder="如：望湘园吃饭" class="form-control" id="remark"></td>
                             </tr>
                         </tbody>
                     </table>
                     <!--日期-->
-                    <table class="table remark">
+                    <table class="table date">
                         <thead>
                         <tr>
                             <th>日期</th>
@@ -99,12 +99,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="datetime-local" placeholder="日期" class="form-control"></td>
+                            <td><input type="date" placeholder="日期" class="form-control" id="date" value=""></td>
                         </tr>
                         </tbody>
                     </table>
                     <!--钱钱-->
-                    <table class="table remark">
+                    <table class="table money">
                         <thead>
                         <tr>
                             <th>Money</th>
@@ -112,7 +112,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="number" min="0" placeholder="花销" class="form-control"></td>
+                            <td><input type="number" min="0" placeholder="￥0.00" class="form-control" id="money"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -120,10 +120,32 @@
                     <table class="table calculator">
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>
+                                    <div class="calculatorDiv">
+                                        <ul>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>+</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>-</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>×</li>
+                                            <li>0</li>
+                                            <li>C</li>
+                                            <li>=</li>
+                                            <li>÷</li>
+                                        </ul>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                    <button class="btn btn-warning" id="recordBtn">记账</button>
                 </div>
                 <div class="tab-pane fade" id="income">
                     <h4>收入tab页</h4>
@@ -136,5 +158,6 @@
     <script src="../framework/jQuery/jquery.min.js"></script>
     <script src="../framework/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="../js/record.js"></script>
+    <script src="../plugins/calculator.js"></script>
 </body>
 </html>

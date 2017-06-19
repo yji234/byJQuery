@@ -24,9 +24,10 @@ a {
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     border-top: 0px;
+    padding: 0px;
 }
 .table>thead>tr>th {
-    border-bottom: 1px solid lightgoldenrodyellow;
+    border-bottom: 0px;
 }
 /*支出*/
 .classifyChild>div{
@@ -38,8 +39,44 @@ a {
     margin-right: 4%;
     color: black;
     padding-top: 5px;
+    cursor: pointer;
 }
 .classifyChild>h5{
     float: left;
     margin-right: 4%;
+}
+#expend>.btn-warning {
+    width: 370px;
+}
+/*计算器*/
+.calculatorDiv{
+    width: 100%;
+    border-radius: 5px;
+   /* background-color: darkcyan;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+}
+.calculatorDiv>ul>li {
+    width: 89px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    background-color: #28a4c9;
+    text-align: center;
+    color: navajowhite;
+    font-size: x-large;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+.calculatorDiv>ul>li:first-child,
+.calculatorDiv>ul>li:nth-child(5),
+.calculatorDiv>ul>li:nth-child(9),
+.calculatorDiv>ul>li:nth-child(13){
+    margin-left: -12%;
 }
