@@ -41,11 +41,16 @@ a {
     padding-top: 5px;
     cursor: pointer;
 }
+.classifyChild>div:hover,
+.classifyChild>div:focus{
+    color: white;
+}
 .classifyChild>h5{
     float: left;
     margin-right: 4%;
 }
-#expend>.btn-warning {
+#expend>.btn-warning,
+#income>.btn-warning{
     width: 370px;
 }
 /*计算器*/

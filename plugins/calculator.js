@@ -30,11 +30,11 @@ function calc(iNum1, iNum2, sOpr) {
 
 //对应的符号的作用
 function doInput() {
-    var oInput=document.getElementById('money');
+    var oInput = $('.active').find('.money').find('input')[0];
+    //console.log(oInput)
     var sHtml=this.innerHTML.replace(' ','');
 
-    switch(sHtml)
-    {
+    switch(sHtml) {
         case '=':
             oInput.value=calc(parseInt(sNum1), parseInt(oInput.value), sOpr);
 

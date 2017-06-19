@@ -26,6 +26,7 @@
                 </li>
             </ul>
             <div id="recordContent" class="tab-content">
+                <!--支出-->
                 <div class="tab-pane fade in active" id="expend">
                     <!--分类-->
                     <table class="table classify">
@@ -147,8 +148,96 @@
                     </table>
                     <button class="btn btn-warning" id="recordBtn">记账</button>
                 </div>
+                <!--收入-->
                 <div class="tab-pane fade" id="income">
-                    <h4>收入tab页</h4>
+                    <!--分类-->
+                    <table class="table classify">
+                        <thead>
+                        <tr>
+                            <th>分类</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="classifyChild">
+                                    <div style="background-color: orange">工资</div>
+                                    <div style="background-color: #1b6d85">红包</div>
+                                    <div style="background-color: yellow">兼职</div>
+                                    <div style="background-color: forestgreen">投资</div>
+                                    <div style="background-color: deepskyblue">奖金</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--备注-->
+                    <table class="table remark">
+                        <thead>
+                        <tr>
+                            <th>备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="text" placeholder="如：北京加维" class="form-control" id="remark1"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--日期-->
+                    <table class="table date">
+                        <thead>
+                        <tr>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="date" placeholder="日期" class="form-control" id="date1" value=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--钱钱-->
+                    <table class="table money">
+                        <thead>
+                        <tr>
+                            <th>Money</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="number" min="0" placeholder="￥0.00" class="form-control" id="money1"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--计算器-->
+                    <table class="table calculator">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="calculatorDiv">
+                                    <ul>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>+</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>-</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>×</li>
+                                        <li>0</li>
+                                        <li>C</li>
+                                        <li>=</li>
+                                        <li>÷</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-warning" id="recordBtn1">记账</button>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@
 
 
 $(function () {
+    //支出
     var recordData = {};
     //分类
     var classDiv = $('.classifyChild').find('div');
@@ -12,6 +13,7 @@ $(function () {
             recordData.classify = $(this).html();
         });
     }
+    //点击按钮记账（支出）
     $('#recordBtn').on('click',function () {
         recordData.remark = $('#remark').val();
         recordData.date = $('#date').val();
@@ -32,4 +34,22 @@ $(function () {
         $('#date').val('');
         $('#money').val('');
     });
+    //点击按钮记账（收入）
+    $('#recordBtn1').on('click',function () {
+        recordData.remark = $('#remark1').val();
+        recordData.date = $('#date1').val();
+        recordData.money = $('#money1').val();
+        console.log(recordData);
+        //向后台发送
+        $.ajax({
+            url:'#',
+            method:'GET',
+            dataType:'json',
+            data:recordData
+        })
+        //置空
+        $('#remark1').val('');
+        $('#date1').val('');
+        $('#money1').val('');
+    })
 });
