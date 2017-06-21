@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>showRecord</title>
+
+
+    <link rel="stylesheet" href="../framework/mobile/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../framework/mobile/framework7/css/framework7-icons.css">
+    <link rel="stylesheet" href="../css/recordShow.css">
+</head>
+<body>
+
+
+<!--左边的页面-->
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>Left panel content goes here</p>
+    </div>
+</div>
+<!--右边的页面-->
+<div class="panel panel-right panel-cover">
+    <div class="content-block">
+        <p>Right panel content goes here</p>
+    </div>
+</div>
+
+
+<div class="views tabs toolbar-through">
+    <a href="#" class="open-panel">left</a>
+    <a href="#" data-panel="right" class="open-panel">right</a>
+
+    <!--统计-->
+    <div id="view-1" class="view view-main tab active">
+        <!-- Pages-->
+        <div class="pages">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index-1" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    统计页面
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--记账-->
+    <div id="view-2" class="view tab">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding">记账页面</div>
+            </div>
+        </div>
+        <div class="pages navbar-through">
+            <div data-page="index-2" class="page">
+                <div class="page-content">
+                    <div class="content-block">
+                        <p>This is a second view. Lets, for example, have here some internal pages with navbar navigation</p>
+                    </div>
+                    <div class="list-block">
+                        <ul>
+                            <li><a href="about.html" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">About Us</div>
+                                    </div>
+                                </div></a></li>
+                            <li><a href="services.html" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Services</div>
+                                    </div>
+                                </div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--其他-->
+    <div id="view-3" class="view tab">
+        <div class="pages">
+            <div data-page="index-3" class="page">
+                <div class="page-content">
+                    其他页面
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部导航按钮-->
+    <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+            <a href="#view-1" class="tab-link active">
+                <i class="f7-icons">data_fill</i>
+                <span class="tabbar-label">统计</span>
+            </a>
+            <a href="#view-2" class="tab-link">
+                <i class="f7-icons">compose_fill</i>
+                <span class="tabbar-label">记账</span>
+            </a>
+            <a href="#view-3" class="tab-link">
+                <i class="f7-icons">box_fill</i>
+                <span class="tabbar-label">其他</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../framework/mobile/framework7/js/framework7.min.js"></script>
+<script type="text/javascript" src="../js/recordShow.js"></script>
+</body>
+</html>
