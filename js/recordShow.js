@@ -74,7 +74,7 @@ function showRecordData(data) {
 
 //动态添加
 function dynamicAdd(data) {
-    var titleDiv = $('<div class="content-block-title skan"><span class="time"></span><span style="margin-left: 55%;font-size: xx-small;"><span class="label" style="color: #444"></span>:<strong class="titleMoney"></strong></span></sp></div>');
+    var titleDiv = $('<div class="content-block-title skan"><span class="time"></span><span style="margin-left: 60%;font-size: xx-small;"><span class="label" style="color: #444"></span>:<strong class="titleMoney"></strong></span></sp></div>');
     var contentDiv = $('<div class="list-block skan"><ul> <li class="swipeout"><div class="swipeout-content item-content"> <div class="item-media"><i class="f7-icons" style="color: lightsalmon">home_fill</i></div> <div class="item-inner"> <div class="item-title classify"></div> <div class="item-after"><span style="color: black; font-weight: bolder" class="contentMoney"></span></div> </div> </div> <div class="swipeout-actions-right"> <a href="#" class="swipeout-delete" data-confirm="确定删除么？" data-confirm-title="Delete?">Delete</a> </div> </li> </ul> </div>')
     $(titleDiv).find('.time').html(data.time);
     $(titleDiv).find('.label').html(data.label);
