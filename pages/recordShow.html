@@ -15,74 +15,107 @@
 <body>
 
 
-<!--左边的页面-->
-<div class="panel panel-left panel-reveal">
-    <div class="content-block">
-        <p>Left panel content goes here</p>
-    </div>
-</div>
-<!--右边的页面-->
-<div class="panel panel-right panel-cover">
-    <div class="content-block">
-        <p>Right panel content goes here</p>
-    </div>
-</div>
-
 
 <div class="views tabs toolbar-through">
-    <a href="#" class="open-panel">left</a>
-    <a href="#" data-panel="right" class="open-panel">right</a>
+    <!--头部-->
+    <div class="content-block top">
+        <!--用户名-->
+        <div class="chip user">
+            <div class="chip-media"><img src="../images/user.jpg"></div>
+            <div class="chip-label username">YJ</div>
+        </div>
+        <!-- 预计存储/预算剩余/本月收入/本月支出-->
+        <div class="list-block title">
+            <ul>
+                <li class="item-content">
+                    <div class="item-media"><i class="f7-icons" style="color: lightsalmon">add_round_fill</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">本月收入</div>
+                        <div class="item-after"><span class="monthIncome">3500</span><span>元</span></div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-media"><i class="f7-icons" style="color: red;">heart_fill</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">预计存储</div>
+                        <div class="item-after"><span style="color: #1b6d85;font-weight: bolder" class="monthSaveMoney">2000</span><span>元</span></div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-media"><i class="f7-icons" style="color: #2b542c">delete_round_fill</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">本月支出</div>
+                        <div class="item-after"><span class="monthExpend">1300</span><span>元</span></div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-media"><i class="f7-icons" style="color: deepskyblue">money_yen_fill</i></div>
+                    <div class="item-inner">
+                        <div class="item-title">预算剩余</div>
+                        <div class="item-after"><span style="color: red;font-weight: bolder" class="monthSurplus">200</span><span>元</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <!--统计-->
-    <div id="view-1" class="view view-main tab active">
-        <!-- Pages-->
-        <div class="pages">
-            <!-- Page, data-page contains page name-->
+    <!--统计【未完成】-->
+    <div id="view-1" class="view tab">
+        <div class="pages toolbar-fixed">
             <div data-page="index-1" class="page">
-                <!-- Scrollable page content-->
                 <div class="page-content">
                     统计页面
                 </div>
             </div>
         </div>
     </div>
-    <!--记账-->
-    <div id="view-2" class="view tab">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="center sliding">记账页面</div>
+    <!--预览-->
+    <div id="view-2" class="view view-main tab active">
+        <div class="pages  toolbar-fixed">
+            <div data-page="index-2" class="page">
+                <div class="page-content skan">
+                    <!--预览页面-->
+                    <!--<div class="content-block-title skan">
+                        <span class="time">6月21日</span>
+                        <span style="margin-left: 66%;font-size: xx-small">支出：<strong>2000</strong></span>
+                    </div>
+                    <div class="list-block skan">
+                        <ul>
+                            <li class="swipeout">
+                                <div class="swipeout-content item-content">
+                                    <div class="item-media"><i class="f7-icons" style="color: lightsalmon">home_fill</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">房租</div>
+                                        <div class="item-after"><span style="color: black; font-weight: bolder">2000</span></div>
+                                    </div>
+                                </div>
+                                <div class="swipeout-actions-right">
+                                    <a href="#" class="swipeout-delete" data-confirm="确定删除么？" data-confirm-title="Delete?">Delete</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
             </div>
         </div>
-        <div class="pages navbar-through">
-            <div data-page="index-2" class="page">
-                <div class="page-content">
-                    <div class="content-block">
-                        <p>This is a second view. Lets, for example, have here some internal pages with navbar navigation</p>
-                    </div>
-                    <div class="list-block">
-                        <ul>
-                            <li><a href="about.html" class="item-link">
-                                <div class="item-content">
-                                    <div class="item-inner">
-                                        <div class="item-title">About Us</div>
-                                    </div>
-                                </div></a></li>
-                            <li><a href="services.html" class="item-link">
-                                <div class="item-content">
-                                    <div class="item-inner">
-                                        <div class="item-title">Services</div>
-                                    </div>
-                                </div></a></li>
-                        </ul>
+    </div>
+    <!--记账-->
+    <div id="view-3" class="view tab">
+        <div class="pages  toolbar-fixed">
+            <div data-page="index-1" class="page">
+                <div class="page-content record" >
+                    <!--记账页面-->
+                    <div id="recordLoad">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--其他-->
-    <div id="view-3" class="view tab">
-        <div class="pages">
-            <div data-page="index-3" class="page">
+    <div id="view-4" class="view tab">
+        <div class="pages toolbar-fixed">
+            <div data-page="index-4" class="page">
                 <div class="page-content">
                     其他页面
                 </div>
@@ -91,25 +124,30 @@
     </div>
 
     <!--底部导航按钮-->
-    <div class="toolbar tabbar tabbar-labels">
+    <div class="toolbar bottom tabbar tabbar-labels">
         <div class="toolbar-inner">
-            <a href="#view-1" class="tab-link active">
-                <i class="f7-icons">data_fill</i>
-                <span class="tabbar-label">统计</span>
+            <a href="#view-1" class="tab-link">
+                <i class="f7-icons statistics">data_fill</i>
+                <span class="tabbar-label statistics">统计</span>
             </a>
-            <a href="#view-2" class="tab-link">
-                <i class="f7-icons">compose_fill</i>
-                <span class="tabbar-label">记账</span>
+            <a href="#view-2" class="tab-link active">
+                <i class="f7-icons skan">book_fill</i>
+                <span class="tabbar-label skan">预览</span>
             </a>
-            <a href="#view-3" class="tab-link">
-                <i class="f7-icons">box_fill</i>
-                <span class="tabbar-label">其他</span>
+            <a href="#view-3" class="tab-link" id="recordBtn">
+                <i class="f7-icons record">compose_fill</i>
+                <span class="tabbar-label record">记账</span>
+            </a>
+            <a href="#view-4" class="tab-link">
+                <i class="f7-icons other">box_fill</i>
+                <span class="tabbar-label other">其他</span>
             </a>
         </div>
     </div>
 </div>
 
 
+<script type="text/javascript" src="../framework/jQuery/jquery.min.js"></script>
 <script type="text/javascript" src="../framework/mobile/framework7/js/framework7.min.js"></script>
 <script type="text/javascript" src="../js/recordShow.js"></script>
 </body>

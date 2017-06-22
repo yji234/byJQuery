@@ -1,36 +1,36 @@
 #recordMain{
-    background-color: lightskyblue;
-    color: lightgoldenrodyellow;
+    background-color: #fff;
+    color: gray;
 }
 #recordMain>div>#record{
     position: relative;
     top:20px;
 }
 /*重置样式*/
-a {
+#recordMain a {
     color: gray;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+#recordMain .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: black;
-    background-color: lightgoldenrodyellow;
-    border: 1px solid lightgoldenrodyellow;
+    background-color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
 }
-.tab-content>.active {
+#recordMain .tab-content>.active {
     padding-top: 10px;
     padding-left: 3%;
 }
-.table {
+#recordMain .table {
     margin-bottom: 0px;
 }
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+#recordMain .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     border-top: 0px;
-    padding: 0px;
+   /* padding: 0px;*/
 }
-.table>thead>tr>th {
+#recordMain .table>thead>tr>th {
     border-bottom: 0px;
 }
 /*支出*/
-.classifyChild>div{
+#recordMain .classifyChild>div{
     float: left;
     width: 30px;
     height: 30px;
@@ -41,23 +41,25 @@ a {
     padding-top: 5px;
     cursor: pointer;
 }
-.classifyChild>div:hover,
-.classifyChild>div:focus{
-    color: white;
+#recordMain .classifyChild>div:focus{
+    color: white;!important;
 }
-.classifyChild>h5{
+#recordMain .classifyChild>h5{
     float: left;
     margin-right: 4%;
 }
-#expend>.btn-warning,
-#income>.btn-warning{
-    width: 370px;
+#recordMain #expend>.btn-warning,
+#recordMain #income>.btn-warning{
+    width: 330px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 4%;
 }
 /*计算器*/
-.calculatorDiv{
+/*#recordMain .calculatorDiv{
     width: 100%;
     border-radius: 5px;
-   /* background-color: darkcyan;*/
+   !* background-color: darkcyan;*!
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -84,4 +86,4 @@ li {
 .calculatorDiv>ul>li:nth-child(9),
 .calculatorDiv>ul>li:nth-child(13){
     margin-left: -12%;
-}
+}*/

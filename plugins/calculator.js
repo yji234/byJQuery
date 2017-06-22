@@ -31,7 +31,7 @@ function calc(iNum1, iNum2, sOpr) {
 //对应的符号的作用
 function doInput() {
     var oInput = $('.active').find('.money').find('input')[0];
-    //console.log(oInput)
+    console.log(oInput)
     var sHtml=this.innerHTML.replace(' ','');
 
     switch(sHtml) {
@@ -78,12 +78,13 @@ function doInput() {
 
 window.onload=function () {
     var aLi=$('.calculator').find('li');
+    console.log(aLi)
     var i=0;
 
     for(i=0;i<aLi.length;i++)
     {
         aLi[i].onmousedown=doInput;
-        aLi[i].onmouseover=function ()
+        /*aLi[i].onmouseover=function ()
         {
             this.className='active';
         };
@@ -91,7 +92,7 @@ window.onload=function () {
         aLi[i].onmouseout=function ()
         {
             this.className='';
-        };
+        };*/
     }
 
 };
