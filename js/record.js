@@ -20,7 +20,7 @@ $(function () {
         recordData.money = $('#money').val();
         console.log(recordData)
         //向后台发送数据
-        $.ajax({
+        /*$.ajax({
             url:'',
             method:'GET',
             dataType:'json',
@@ -28,7 +28,7 @@ $(function () {
             success:function (data) {
                 //alert(data);
             }
-        })
+        })*/
         //置空
         $('#remark').val('');
         $('#date').val('');
@@ -41,12 +41,12 @@ $(function () {
         recordData.money = $('#money1').val();
         console.log(recordData);
         //向后台发送
-        $.ajax({
+        /*$.ajax({
             url:'#',
             method:'GET',
             dataType:'json',
             data:recordData
-        })
+        })*/
         //置空
         $('#remark1').val('');
         $('#date1').val('');
